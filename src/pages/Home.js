@@ -1,4 +1,6 @@
-function App() {
+import React from "react";
+
+function Home() {
     return (
       <div >
         Home
@@ -6,5 +8,5 @@ function App() {
     );
   }
   
-  export default App;
+  export default Home;
   

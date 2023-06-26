@@ -1,4 +1,5 @@
-function App() {
+import React from "react";
+function CreatePost() {
     return (
       <div>
         createpost
@@ -6,5 +7,5 @@ function App() {
     );
   }
   
-  export default App;
+  export default CreatePost;
   

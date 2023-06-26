@@ -1,4 +1,6 @@
-function App() {
+import React from "react";
+
+function Login() {
     return (
       <div >
        Log in 
@@ -6,5 +8,5 @@ function App() {
     );
   }
   
-  export default App;
+  export default Login;
   
