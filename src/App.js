@@ -8,6 +8,9 @@ import CreatePost from './pages/CreatePost';
 function App() {
   return (
     <Router>
+      <nav>
+        
+      </nav>
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/login"  element={<Login />} />
