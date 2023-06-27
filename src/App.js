@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import CreatePost from './pages/CreatePost';
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
   return (
     <Router>
       <nav>
@@ -15,7 +16,7 @@ function App() {
       </nav>
       <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/login"  element={<Login />} />
+      <Route path="/login"  element={<Login setIsAuth={setIsAuth} />} />
       <Route path="/createpost"  element={<CreatePost />} />
       </Routes>
     </Router>
