@@ -2,8 +2,9 @@ import React from "react";
 
 function Login() {
     return (
-      <div >
-       Log in 
+      <div className="loginPage">
+       <p>Sign With Google to Continue</p>
+       <button className="login-with-google-btn">Sign in with Google</button>
       </div>
     );
   }
