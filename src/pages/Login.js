@@ -2,11 +2,11 @@ import React from "react";
 import {auth,provider} from "../firebase-configure";
 import{signInWithPopup } from  "firebase/auth";
 
-function Login(setIsAuth) {
+function Login({setIsAuth}) {
   const signInWithGoogle = () =>{
     signInWithPopup(auth,provider).then((result)=>{
       localStorage.setItem("isAuth", true);
-      setIsAuth(true)
+      setIsAuth(true);
       
     });
   };
