@@ -1,6 +1,6 @@
 import React from "react";
 import {auth,provider} from "../firebase-configure";
-import{signInWithPopup } from  "firebase/auth ";
+import{signInWithPopup } from  "firebase/auth";
 
 function Login(setIsAuth) {
   const signInWithGoogle = () =>{
