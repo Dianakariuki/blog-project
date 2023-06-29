@@ -1,8 +1,8 @@
 import React from "react";
 function CreatePost() {
     return (
-      <div>
-        createpost
+      <div className="createPostPage">
+        <div class
       </div>
     );
   }
