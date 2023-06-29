@@ -10,10 +10,11 @@ function CreatePost() {
             </div>
             <div className="inputGp">
               <label>Post:</label>
-              <textarea placeholder="Post...">
-                
-              </textarea>
+              <textarea placeholder="Post..."/>
+
+              
           </div>
+          <button> Submit Post</button>
         </div>
       </div>
     );
