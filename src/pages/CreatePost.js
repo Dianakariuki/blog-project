@@ -1,5 +1,7 @@
 import React from "react";
 function CreatePost() {
+  [title,setTitle] = useState("");
+  [postText,setPostText] = useState("");
     return (
       <div className="createPostPage">
         <div className="cpContainer">
