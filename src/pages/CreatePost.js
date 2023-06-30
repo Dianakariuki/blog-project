@@ -5,12 +5,13 @@ import {  useNavigate } from "react-router-dom";
 
 function CreatePost() {
  
-  [title,setTitle] = useState("");
-  [postText,setPostText] = useState("");
+  const [title,setTitle] = useState("");
+  const [postText,setPostText] = useState("");
 
 
   const postCollectionRef =collection(db,"post")
   let navigate = useNavigate();
+  
   const createPost = async () => {
     await addDoc(postCollectionRef,{ title, postText, author:{name:auth.currentUser.displayName,id:auth.currentUser.uid}});
     navigate("/");
