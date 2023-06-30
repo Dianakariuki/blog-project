@@ -1,8 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
+import{addDoc} from "firebase/firestore";
+
+
 function CreatePost() {
   [title,setTitle] = useState("");
   [postText,setPostText] = useState("");
-    return (
+
+  const createPost = async () => {
+    await addDoc()
+  };
+      return (
       <div className="createPostPage">
         <div className="cpContainer">
           <h1>Create A post</h1>
