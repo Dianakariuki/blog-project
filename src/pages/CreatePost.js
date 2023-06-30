@@ -8,11 +8,17 @@ function CreatePost() {
           <h1>Create A post</h1>
           <div className="inputGp">
             <label>Title:</label>
-            <input placeholder="Title..."/>
+            <input placeholder="Title..."
+            onChange={(event) =>{
+              setTitle(event.target.value);
+            }}/>
             </div>
             <div className="inputGp">
               <label>Post:</label>
-              <textarea placeholder="Post..."/>
+              <textarea placeholder="Post..."
+              onChange={(event) =>{
+                setPostText(event.target.value);
+              }}/>
 
               
           </div>
