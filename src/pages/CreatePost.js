@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import{addDoc,collection} from "firebase/firestore";
-import { db } from "../firebase-configure";
+import { db ,auth } from "../firebase-configure";
 
 function CreatePost() {
   [title,setTitle] = useState("");
@@ -8,7 +8,7 @@ function CreatePost() {
 
   const postCollectionRef =collection(db,"post")
   const createPost = async () => {
-    await addDoc(postCollectionRef,{ title, postText, author:{name:id}});
+    await addDoc(postCollectionRef,{ title, postText, author:{name:auth.currentUser.displayName,id:auth.currentUser.uid}});
   };
       return (
       <div className="createPostPage">
