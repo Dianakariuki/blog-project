@@ -35,7 +35,7 @@ function CreatePost() {
 
               
           </div>
-          <button> Submit Post</button>
+          <button onClick={CreatePost}> Submit Post</button>
         </div>
       </div>
     );
